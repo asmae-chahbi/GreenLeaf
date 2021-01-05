@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookDescriptionOwner">
+
+    <TextView
+        android:id="@+id/description_label3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Demandes : "
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:textColor="@color/startblue"
+        app:layout_constraintStart_toStartOf="@+id/details_label2"
+        app:layout_constraintTop_toBottomOf="@+id/label_category2"
+
+        />
+
+    <TextView
+        android:id="@+id/details_label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_book_detail_details_section"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:textColor="@color/startblue"
+        app:layout_constraintStart_toStartOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        android:contentDescription="Details du livre"
+        />
+
+    <TextView
+        android:id="@+id/label_category2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/label_book_detail_category"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/label_author2"
+        app:layout_constraintTop_toBottomOf="@+id/label_author2" />
+
+    <TextView
+        android:id="@+id/label_author2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/label_book_detail_author"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/details_label2"
+        app:layout_constraintTop_toBottomOf="@+id/details_label2" />
+
+    <TextView
+        android:id="@+id/price2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Prix du livre"
+        android:text="prix : 200DH"
+        app:layout_constraintStart_toEndOf="@+id/imagebookOwner"
+        app:layout_constraintTop_toBottomOf="@+id/titleOwner" />
+
+    <TextView
+        android:id="@+id/authorOwner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="Nom de l'auteur"
+        android:fontFamily="serif"
+        android:text="Auteur"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/label_author2"
+        app:layout_constraintStart_toEndOf="@+id/label_author2"
+        app:layout_constraintTop_toTopOf="@+id/label_author2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imagebookOwner"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/book"
+        android:contentDescription="Image du livre"
+        />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagebookOwner" />
+
+    <TextView
+        android:id="@+id/titleOwner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="Titre du livre"
+        android:fontFamily="serif"
+        android:text="Titre"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imagebookOwner"
+        app:layout_constraintTop_toTopOf="@+id/imagebookOwner" />
+
+    <TextView
+        android:id="@+id/categoryOwner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Categorie du livre"
+        android:fontFamily="serif"
+        android:text="Categorie"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/label_category2"
+        app:layout_constraintStart_toStartOf="@+id/authorOwner"
+        app:layout_constraintTop_toTopOf="@+id/label_category2" />
+
+    <Spinner
+        android:id="@+id/liste_request"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/description_label3"
+        app:layout_constraintStart_toEndOf="@+id/description_label3"
+        app:layout_constraintTop_toTopOf="@+id/description_label3"
+        app:layout_constraintVertical_bias="0.0"
+        android:contentDescription="Liste des demandes"
+        />
+
+    <Button
+        android:id="@+id/Validate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/buttongrad"
+        android:text="Valider l'achetteur"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/description_label3"
+        app:layout_constraintTop_toBottomOf="@+id/liste_request"
+        android:contentDescription="Bouton pour valider l'acheteur"
+        />
+
+    <TextView
+        android:id="@+id/etat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="Etat du livre" />
+</androidx.constraintlayout.widget.ConstraintLayout>

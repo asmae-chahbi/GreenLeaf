@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.createbook.CreateBookFragment">
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageButton
+            android:id="@+id/importImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/inputImage"
+            app:layout_constraintEnd_toEndOf="@+id/inputImage"
+            app:layout_constraintStart_toStartOf="@+id/inputImage"
+            app:layout_constraintTop_toTopOf="@+id/inputImage"
+            app:srcCompat="@android:drawable/ic_menu_upload"
+            android:contentDescription="Telecharger l'image du livre"
+            />
+
+        <ImageView
+            android:id="@+id/inputImage"
+            android:layout_width="213dp"
+            android:layout_height="142dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="Image du livre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/inputTitle"
+            android:layout_width="304dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Titre"
+            android:inputType="textPersonName"
+            android:contentDescription="Inserer titre du livre"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/inputImage"
+            app:layout_constraintHorizontal_bias="0.513"
+            app:layout_constraintStart_toStartOf="@+id/inputImage"
+            app:layout_constraintTop_toBottomOf="@+id/inputImage" />
+
+        <EditText
+            android:id="@+id/inputPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Prix"
+            android:inputType="number"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/inputTitle"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/inputTitle"
+            app:layout_constraintTop_toBottomOf="@+id/inputAuthor"
+            android:contentDescription="Inserer le prix du livre"
+            />
+
+        <EditText
+            android:id="@+id/inputAuthor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Auteur"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/inputTitle"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/inputTitle"
+            app:layout_constraintTop_toBottomOf="@+id/inputTitle"
+            android:contentDescription="Inserer le nom de l'auteur"
+            />
+
+        <!--<EditText
+            android:id="@+id/inputCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Categorie"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/inputPrice"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/inputPrice"
+            app:layout_constraintTop_toBottomOf="@+id/inputPrice" />-->
+
+        <Spinner
+            android:id="@+id/inputCategorySpinner"
+            style="@style/mySpinnerItemStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:entries="@array/books_categories"
+            android:prompt="@string/categorie_prompt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/inputPrice"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/inputPrice"
+            app:layout_constraintTop_toBottomOf="@+id/inputPrice"
+            android:contentDescription="Choisir la Categorie de livre"
+            />
+
+        <!--<EditText
+            android:id="@+id/inputDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_vertical"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/inputCategory"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/inputCategory"
+            app:layout_constraintTop_toBottomOf="@+id/inputCategory" />-->
+
+        <!--<MultiAutoCompleteTextView
+            android:id="@+id/inputCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Categorie"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/inputPrice"
+            app:layout_constraintHorizontal_bias="0.338"
+            app:layout_constraintStart_toStartOf="@+id/inputPrice"
+            app:layout_constraintTop_toBottomOf="@+id/inputPrice" />-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/inputCategorySpinner"
+            app:layout_constraintStart_toStartOf="@+id/inputCategorySpinner"
+            app:layout_constraintTop_toBottomOf="@+id/inputCategorySpinner">
+
+            <ImageButton
+                android:id="@+id/start_stop"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/linearLayout"
+                app:srcCompat="@drawable/ic_play"
+                tools:ignore="VectorDrawableCompat"
+                android:contentDescription="Enregistrer une description du livre"
+                />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/start_stopRecording"
+                app:layout_constraintStart_toEndOf="@+id/start_stop"
+                app:layout_constraintTop_toTopOf="parent">
+
+                -
+
+                <TextView
+                    android:id="@+id/textCurrentTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatSeekBar
+                    android:id="@+id/playerSeek"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textTotalTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/start_stopRecording"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/linearLayout"
+                app:srcCompat="@drawable/ic_mic"
+                tools:ignore="VectorDrawableCompat" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/addBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Ajouter"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/inputCategorySpinner"
+            app:layout_constraintStart_toStartOf="@+id/inputCategorySpinner"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+            android:contentDescription="Bouton d'ajout du ivre"
+            />
+
+        <!--<ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/arrow_drop_down"
+            app:layout_constraintEnd_toEndOf="@+id/inputCategory"
+            app:layout_constraintTop_toTopOf="@+id/inputCategory" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

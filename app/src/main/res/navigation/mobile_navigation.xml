@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.greenleaf.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_mesachats"
+        android:name="com.example.greenleaf.ui.purchase.PurchaseFragment"
+        android:label="@string/menu_purchase"
+        tools:layout="@layout/fragment_purchase" />
+
+    <fragment
+        android:id="@+id/nav_mesventes"
+        android:name="com.example.greenleaf.ui.sales.SalesFragment"
+        android:label="@string/menu_sales"
+        tools:layout="@layout/fragment_sales" />
+
+    <fragment
+        android:id="@+id/nav_chat"
+        android:name="com.example.greenleaf.ui.chat.ChatFragment"
+        android:label="@string/menu_chat"
+        tools:layout="@layout/fragment_chat_tab" />
+
+    <fragment
+        android:id="@+id/nav_add_book"
+        android:name="com.example.greenleaf.ui.createbook.CreateBookFragment"
+        android:label="@string/AddBook"
+        tools:layout="@layout/fragment_createbook" />
+
+    <fragment
+        android:id="@+id/nav_profil"
+        android:name="com.example.greenleaf.ui.profil.ProfilFragment"
+        android:label="@string/menu_profil"
+        tools:layout="@layout/fragment_profil" />
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.example.greenleaf.ui.help.HelpFragment"
+        android:label="@string/help"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/nav_deconnexion"
+        android:name="com.example.greenleaf.ui.logout.LogoutFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/logout_fragment" />
+
+</navigation>

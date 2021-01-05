@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">GreenLeaf</string>
+    <string name="title_activity_bar_home">bar_home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Accueil</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="user_name">name</string>
+    <string name="menu_logout">Déconnexion</string>
+    <string name="menu_profil">Profil</string>
+    <string name="menu_chat">Chat</string>
+    <string name="menu_sales">Mes Livres</string>
+    <string name="menu_purchase">Livres à vendre</string>
+    <string name="Price">prix</string>
+
+    <string name="login">Connexion</string>
+    <string name="help">Help</string>
+    <string name="register">Inscription</string>
+    <string name="fname">Prénom</string>
+    <string name="lname">Nom</string>
+    <string name="email">Email</string>
+    <string name="mobile">Numéro de télephone</string>
+    <string name="mp">Mot de Passe</string>
+    <string name="already">Vous avez déjà un compte </string>
+    <string name="dont">Vous n\'avez pas de compte </string>
+    <string name="AddBook">Ajouter un livre</string>
+    <string name="menu_livre">Mes Livres</string>
+    <string name="Profil">Profil</string>
+
+    <string name="label_book_title">Titre du Livre</string>
+    <string name="label_book_price">Prix du Livre</string>
+    <string name="label_book_thumbnail">Book Thumbnail</string>
+    <string name="label_book_detail_category_section">Dans la même catégorie</string>
+    <string name="label_book_detail_description_section">Description</string>
+    <string name="label_book_detail_year">Année:</string>
+    <string name="label_book_detail_category">Catégorie:</string>
+    <string name="label_book_detail_author">Auteur:</string>
+    <string name="label_book_detail_details_section">Détails:</string>
+
+    <string name="categorie_prompt">Choisissez une catégorie</string>
+
+    <string name="dialog_categories_label">Séléctionnez les domaines qui vous intéressent</string>
+
+    <string-array name="books_categories">
+        <item>Agronomie</item>
+        <item>Biologie</item>
+        <item>Chimie</item>
+        <item>Géologie</item>
+        <item>Informatique</item>
+        <item>Médecine</item>
+        <item>Mathématique</item>
+        <item>Physique</item>
+        <item>Technologie</item>
+        <item>Livres divers</item>
+    </string-array>
+
+    <string-array name="shopping_items">
+        <item>0-100</item>
+        <item>101-200</item>
+        <item>201-300</item>
+        <item>301-500</item>
+        <item>501-1000</item>
+        <item>Tout prix</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_tutoriel">Demo</string>
+    <string name="recherche">Recherche</string>
+    <string name="personaliser_les_cat_gories">Personaliser les catégories</string>
+    <string name="personaliser_les_prix">Personaliser les prix</string>
+    <string name="contact">Contact :</string>
+    <string name="auteur">Auteur</string>
+    <string name="author_name">Nom de l\'auteur</string>
+    <string name="image_du_livre">Image du livre</string>
+    <string name="titre_du_livre">Titre du livre</string>
+
+</resources>

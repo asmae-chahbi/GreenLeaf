@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "890714499149",
+    "firebase_url": "https://green-leaf-43ece.firebaseio.com",
+    "project_id": "green-leaf-43ece",
+    "storage_bucket": "green-leaf-43ece.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890714499149:android:6b106b7385f7a0b0135404",
+        "android_client_info": {
+          "package_name": "com.example.greenleaf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890714499149-rgoj4op9evc96lcqe7p8e4s9v71olp8m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.greenleaf",
+            "certificate_hash": "33a7e58e6bc9391bd61ff80311133aede55a95d4"
+          }
+        },
+        {
+          "client_id": "890714499149-5bqm6jcuu8q8sigh8sk7hhtpjbvdqae7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN_sdAEhK_Wuj-wa1rOkIg3yX7UnNm3as"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "890714499149-5bqm6jcuu8q8sigh8sk7hhtpjbvdqae7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
